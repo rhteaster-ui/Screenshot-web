@@ -1,0 +1,6 @@
+{
+  "name": "FOLIO — Web Screenshot & Archive Tool",
+  "description": "TANGKAP WEB. SIMPAN. Screenshot halaman web dalam JPG, PNG, WEBP, atau PDF dengan kontrol viewport, batch capture, delay, dan instant download.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

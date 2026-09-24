@@ -1,0 +1,2 @@
+export function BrandMark({className=''}:{className?:string}){return <svg className={className} width="32" height="32" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M8 27V8h19M37 8h19v19M56 37v19H37M27 56H8V37M24 24h16v16H24z" stroke="currentColor" strokeWidth="5"/></svg>;}
+export function CropMarks(){return <><i className="crop tl"/><i className="crop tr"/><i className="crop bl"/><i className="crop br"/></>;}
