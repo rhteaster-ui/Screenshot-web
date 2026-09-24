@@ -1,9 +1,9 @@
-import type { CaptureProvider, Config } from './model';
-import { ssweb } from './providers/ssweb';
-import { CaptureError } from './errors';
-import {remoteProvider} from './providers/remote';
+import type {CaptureProvider, Config} from './model';
+import {CaptureError} from './errors';
+import {playwrightProvider} from './providers/playwright';
+
+// FOLIO captures locally with Playwright. No external screenshot provider is used.
 export function createProvider(config: Config): CaptureProvider {
-  if(config.provider==='ssweb')return ssweb(config);
-  if(config.provider==='remote')return remoteProvider(config);
-  throw new CaptureError('SERVICE_UNAVAILABLE','Konfigurasi layanan capture belum tersedia.',503);
+  if (config.provider === 'playwright') return playwrightProvider(config);
+  throw new CaptureError('SERVICE_UNAVAILABLE', 'Mesin capture lokal belum tersedia.', 503);
 }
