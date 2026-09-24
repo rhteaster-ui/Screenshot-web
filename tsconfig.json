@@ -42,6 +42,13 @@
   ],
   "exclude": [
     "node_modules",
-    "examples"
+    "examples",
+    "vite.config.ts",
+    "vite.node.config.ts",
+    "build/**/*.ts",
+    "scripts/**/*.ts",
+    "scripts/**/*.mjs",
+    "dist",
+    "dist-node"
   ]
 }
