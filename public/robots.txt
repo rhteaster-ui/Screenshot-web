@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://folio-web-capture.mahadewa156.chatgpt.site/sitemap.xml
